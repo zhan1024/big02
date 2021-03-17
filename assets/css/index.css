@@ -35,6 +35,7 @@ a {
     color: #fff;
     font-size: 12px;
     user-select: none;
+    /* 文本不能被选择 */
 }
 
 .layui-side-scroll .userinfo {
