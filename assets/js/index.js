@@ -9,7 +9,7 @@ $(function () {
     let layer = layui.layer;
     $("#btnLogout").on("click", function () {
         //框架提供询问框
-        layer.confirm('是否确认退出!', { icon: 3, title: "t提示" }, function (index) {
+        layer.confirm('是否确认退出登陆!', { icon: 3, title: "提示" }, function (index) {
             //清空本地token
             localStorage.removeItem("token");
             //2,页面跳转
@@ -52,5 +52,6 @@ function renderAvatar(user) {
         //渲染图片头像,隐藏文字头像
         $(".layui-nav-img").show().attr('src', user.user_pic);
         $(".text-avatar").hide();
+        // 文弘
     }
 }
